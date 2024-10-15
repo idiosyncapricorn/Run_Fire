@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.progress-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #e6e6e6;
+}
+
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0px, 75px, 150px, 0px);
+}
+
+.full,
+.half .fill {
+    background-color: #4caf50; /* Default color */
+}
+
+.fill {
+    position: absolute;
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #4caf50;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+
+.inside-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
