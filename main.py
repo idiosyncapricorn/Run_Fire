@@ -5,8 +5,8 @@ import folium
 app = Flask(__name__)
 
 # Constants for the map center (example: San Francisco)
-MAP_CENTER_LAT = 37.7749
-MAP_CENTER_LON = -122.4194
+MAP_CENTER_LAT =
+MAP_CENTER_LON = 
 WILDFIRE_API_URL = 'https://eonet.gsfc.nasa.gov/api/v2.1/events?status=open&category=wildfires'
 
 # Function to fetch wildfire data from the NASA EONET API
